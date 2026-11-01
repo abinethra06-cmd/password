@@ -1,0 +1,7 @@
+# Password Security Auditing Tool - dependencies
+# Core hashing (hashlib), DB (sqlite3), secrets, hmac are in the Python stdlib.
+streamlit>=1.40        # web frontend / dashboard (pulls pandas, numpy, pyarrow)
+pandas>=2.2            # tabular display / CSV handling (used directly in the UI)
+plotly>=5.24           # dashboard charts (pure-Python)
+fpdf2>=2.8             # PDF audit reports (pure-Python)
+pytest>=8.0            # test suite (development)

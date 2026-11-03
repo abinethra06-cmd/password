@@ -35,12 +35,27 @@ def _leet(word: str) -> str:
 
 
 def _case_forms(word: str) -> list[str]:
-    forms = []
-    for f in (word, word.lower(), word.upper(), word.capitalize(), _leet(word)):
-        if f not in forms:
-            forms.append(f)
-    return forms
+    forms = [
+        word,
+        word.lower(),
+        word.upper(),
+        word.capitalize(),
+        _leet(word),
+    ]
 
+    # Common leetspeak patterns
+    leet = word.lower()
+    leet_variants = [
+        leet.replace("a", "@"),
+        leet.replace("s", "$"),
+        leet.replace("o", "0"),
+        leet.replace("a", "@").replace("s", "$").replace("o", "0"),
+    ]
+
+    forms.extend(leet_variants)
+
+    # Remove duplicates while preserving order
+    return list(dict.fromkeys(forms))
 
 def _ordered_suffixes() -> list[str]:
     """Suffixes in priority order so high-value mutations (common numbers,

@@ -1,0 +1,263 @@
+{
+  "run": {
+    "id": 6,
+    "dataset_id": 1,
+    "attack_type": "all",
+    "params_json": "{\"max_variants_per_word\": 400, \"with_variants\": false, \"salted_budget_sec\": 8}",
+    "total_hashes": 17,
+    "cracked_count": 3,
+    "duration_sec": 16.760185499999352,
+    "status": "completed",
+    "started_at": "2026-11-02T13:04:33+00:00",
+    "finished_at": "2026-11-02T13:04:33+00:00",
+    "dataset_name": "Secure store PBKDF2 (salted)"
+  },
+  "summary": {
+    "total_accounts": 17,
+    "cracked_count": 3,
+    "crack_rate_pct": 17.6,
+    "risk_counts": {
+      "Critical": 3,
+      "High": 0,
+      "Medium": 0,
+      "Low": 14
+    },
+    "overall_risk": "Critical",
+    "storage_grade": "Good",
+    "storage_notes": [
+      "Passwords use salted, slow hashing -- resistant to precomputation and batch attacks. Weak passwords can still fall to targeted guessing."
+    ],
+    "algorithms": [
+      "pbkdf2_sha256"
+    ],
+    "recommendations": [
+      "3 of 17 passwords were recovered (17.6%). Force resets for all affected accounts.",
+      "Enforce a minimum length of 12+ characters and screen new passwords against a common-password blocklist.",
+      "Enable multi-factor authentication to reduce the impact of any single compromised password."
+    ]
+  },
+  "results": [
+    {
+      "id": 72,
+      "run_id": 6,
+      "entry_id": 1,
+      "username": "alice",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 1,
+      "recovered_password": "password",
+      "method": "dictionary",
+      "attempts": 2,
+      "time_sec": 8.3375,
+      "risk_level": "Critical"
+    },
+    {
+      "id": 73,
+      "run_id": 6,
+      "entry_id": 2,
+      "username": "bob",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 1,
+      "recovered_password": "123456",
+      "method": "dictionary",
+      "attempts": 1,
+      "time_sec": 8.3375,
+      "risk_level": "Critical"
+    },
+    {
+      "id": 74,
+      "run_id": 6,
+      "entry_id": 3,
+      "username": "carol",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 1,
+      "recovered_password": "qwerty",
+      "method": "dictionary",
+      "attempts": 6,
+      "time_sec": 8.3375,
+      "risk_level": "Critical"
+    },
+    {
+      "id": 75,
+      "run_id": 6,
+      "entry_id": 4,
+      "username": "dave",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 0,
+      "recovered_password": null,
+      "method": null,
+      "attempts": 0,
+      "time_sec": 0.0,
+      "risk_level": "Low"
+    },
+    {
+      "id": 76,
+      "run_id": 6,
+      "entry_id": 5,
+      "username": "erin",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 0,
+      "recovered_password": null,
+      "method": null,
+      "attempts": 0,
+      "time_sec": 0.0,
+      "risk_level": "Low"
+    },
+    {
+      "id": 77,
+      "run_id": 6,
+      "entry_id": 6,
+      "username": "frank",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 0,
+      "recovered_password": null,
+      "method": null,
+      "attempts": 0,
+      "time_sec": 0.0,
+      "risk_level": "Low"
+    },
+    {
+      "id": 78,
+      "run_id": 6,
+      "entry_id": 7,
+      "username": "grace",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 0,
+      "recovered_password": null,
+      "method": null,
+      "attempts": 0,
+      "time_sec": 0.0,
+      "risk_level": "Low"
+    },
+    {
+      "id": 79,
+      "run_id": 6,
+      "entry_id": 8,
+      "username": "heidi",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 0,
+      "recovered_password": null,
+      "method": null,
+      "attempts": 0,
+      "time_sec": 0.0,
+      "risk_level": "Low"
+    },
+    {
+      "id": 80,
+      "run_id": 6,
+      "entry_id": 9,
+      "username": "ivan",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 0,
+      "recovered_password": null,
+      "method": null,
+      "attempts": 0,
+      "time_sec": 0.0,
+      "risk_level": "Low"
+    },
+    {
+      "id": 81,
+      "run_id": 6,
+      "entry_id": 10,
+      "username": "judy",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 0,
+      "recovered_password": null,
+      "method": null,
+      "attempts": 0,
+      "time_sec": 0.0,
+      "risk_level": "Low"
+    },
+    {
+      "id": 82,
+      "run_id": 6,
+      "entry_id": 11,
+      "username": "mallory",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 0,
+      "recovered_password": null,
+      "method": null,
+      "attempts": 0,
+      "time_sec": 0.0,
+      "risk_level": "Low"
+    },
+    {
+      "id": 83,
+      "run_id": 6,
+      "entry_id": 12,
+      "username": "niaj",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 0,
+      "recovered_password": null,
+      "method": null,
+      "attempts": 0,
+      "time_sec": 0.0,
+      "risk_level": "Low"
+    },
+    {
+      "id": 84,
+      "run_id": 6,
+      "entry_id": 13,
+      "username": "olivia",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 0,
+      "recovered_password": null,
+      "method": null,
+      "attempts": 0,
+      "time_sec": 0.0,
+      "risk_level": "Low"
+    },
+    {
+      "id": 85,
+      "run_id": 6,
+      "entry_id": 14,
+      "username": "peggy",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 0,
+      "recovered_password": null,
+      "method": null,
+      "attempts": 0,
+      "time_sec": 0.0,
+      "risk_level": "Low"
+    },
+    {
+      "id": 86,
+      "run_id": 6,
+      "entry_id": 15,
+      "username": "rupert",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 0,
+      "recovered_password": null,
+      "method": null,
+      "attempts": 0,
+      "time_sec": 0.0,
+      "risk_level": "Low"
+    },
+    {
+      "id": 87,
+      "run_id": 6,
+      "entry_id": 16,
+      "username": "sybil",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 0,
+      "recovered_password": null,
+      "method": null,
+      "attempts": 0,
+      "time_sec": 0.0,
+      "risk_level": "Low"
+    },
+    {
+      "id": 88,
+      "run_id": 6,
+      "entry_id": 17,
+      "username": "trent",
+      "hash_algo": "pbkdf2_sha256",
+      "cracked": 0,
+      "recovered_password": null,
+      "method": null,
+      "attempts": 0,
+      "time_sec": 0.0,
+      "risk_level": "Low"
+    }
+  ],
+  "generated_at": "2026-11-02T13:04:55+00:00"
+}

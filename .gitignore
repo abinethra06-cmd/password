@@ -1,20 +1,13 @@
-# Python
-__pycache__/
-*.py[cod]
-*.egg-info/
-.venv/
 venv/
-env/
-
-# Test / build caches
+__pycache__/
+*.pyc
 .pytest_cache/
-
-# Runtime / generated artifacts
-auditor.db
-data/rainbow/
-data/reports/
-
-# OS / editor
-.DS_Store
+.env
+.env.*
 .vscode/
-.idea/
+*.log
+.DS_Store
+run.txt
+*.db
+*.sqlite
+data/datasets/Secure_store_PBKDF2_salted.csv
